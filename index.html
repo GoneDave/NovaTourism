@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Touristique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Asset/images/logo.jpg" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-div">
+            <div class="logo">
+                <p>Nova <span>Techn.</span></p>
+            </div>
+        </div>
+        <button id="deploy">
+            <div class="fig"></div>
+            <div class="fig"></div>
+            <div class="fig"></div>
+        </button>
+
+        <nav>
+            <div class="nav">
+                <a href="#home">Acceuil</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#pricing">Tarifs</a>
+                <a href="#reviews">Avis</a>
+            </div>
+
+            <div class="btn-header" id="reservation">
+                <a class="btn" href="#">Réservé</a>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <section class="home-section" id="home">
+        <div class="home-section-top">
+            <div class="left">
+                <img loading="lazy" src="Asset/images/Icon1-nop.jpg" alt="img" class="left-image-1">
+                <img loading="lazy" src="Asset/images/Cacao.jpg" alt="img" class="left-image-2">
+            </div>
+            <div class="right">
+                <div>
+                    <span class="text-right">Planifiez Votre Aventure</span>
+                    <h1>Votre Voyage Idéal <br>Au Cameroun</h1>
+                    <p>Découvrez le Cameroun, l’Afrique en miniature !
+                        Entre plages dorées, montagnes majestueuses, savanes arides et forêts tropicales luxuriantes, le
+                        Cameroun offre une diversité de paysages à couper le souffle. Riche de plus de 250 ethnies, le
+                        pays vous invite à un voyage culturel unique, rythmé par des danses traditionnelles, des marchés
+                        colorés et une cuisine savoureuse. Du mont Cameroun aux rives du lac Tchad, chaque région
+                        regorge de merveilles naturelles et humaines à explorer. Que vous soyez passionné de nature,
+                        d’aventure ou de culture, le Cameroun vous accueille à bras ouverts. Venez vivre l’expérience
+                        authentique d’un pays chaleureux et profondément vibrant !</p>
+
+                    <div class="buttons">
+                        <a class="btn" href="Asset/Documents/Cameroun_note_pays.pdf" target="_blank">
+                            En savoir plus
+                        </a> <button class="see-video" id="play-video">
+                            <div class="video-bg">
+                                <div class="play-btn">
+                                    <i>►</i>
+                                    <!-- Icone Play<i class="fa-solid fa-play"></i> -->
+                                </div>
+                            </div>
+                            <span>Watch Our Story</span>
+                        </button>
+                        <div id="video-container" style="display: none;">
+                            <video id="my-video" controls>
+                                <source src="Asset/Le_Royaume_Enchanté_de_Paul_1er___Une_Satire_Politique(360p).mp4"
+                                    type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture de vidéos.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations" id="destinations">
+        <h1 class="title">Bienvenue dans la galerie des Merveilles du Cameroun</h1>
+        <div class="desc-button">
+            <p class="small-desc">Laissez-vous émerveiller par la richesse et la diversité de notre patrimoine.
+                Montagnes, plages, forêts, traditions... Chaque image raconte une histoire, chaque lieu révèle une magie
+                unique. Explorez, rêvez, voyagez ! <br>Chaque lieu offre une
+                expérience unique et mémorable.</p>
+        </div>
+
+        <div class="gallerie" id="carousel_destinations">
+            <div class="image">
+                <img loading="lazy" src="Asset/images/Savane.jpg" alt="img" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Savane</h3>
+                    <p class="text_desc">Art de vivre nature pur, paysages enchanteurs.</p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/Foret.jpg" alt="img" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Forêt</h3>
+                    <p class="text_desc">Forêt tropical luxuriantes, observation de primat</p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/Chute.jpg" alt="img" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Chute</h3>
+                    <p class="text_desc">Paysages grandioses et meiveille de la nature <br>Cascasde</p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/River.jpg" alt="img" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Rivière</h3>
+                    <p class="text_desc">Environnement spectaculaires et culture marine diversifiée</p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/1.jpg" alt="Paysage montagneux du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Montagne du Cameroun</h3>
+                    <p class="text_desc">Des reliefs majestueux, des sentiers verdoyants et une vue panoramique à couper
+                        le souffle.</p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/2.jpg" alt="Vallée verdoyante du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Vallée verte</h3>
+                    <p class="text_desc">Un paysage luxuriant parfait pour les randonneurs et les amoureux de la nature.
+                    </p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/3.jpg" alt="Forêt tropicale du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Forêt tropicale</h3>
+                    <p class="text_desc">Entre humidité, faune exceptionnelle et végétation dense, un univers fascinant.
+                    </p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/4.jpg" alt="Plage et mer du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Côte paisible</h3>
+                    <p class="text_desc">Des plages bordées de sable fin et une eau calme idéale pour la détente.</p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/5.jpg" alt="Paysage de savane du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Savane dorée</h3>
+                    <p class="text_desc">Une étendue ouverte aux tons chauds, entre lumière du soleil et vent du soir.
+                    </p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/6.jpg" alt="Cascades du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Cascade enchantée</h3>
+                    <p class="text_desc">Une chute d’eau spectaculaire, entourée de roches et de verdure tropicale.</p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/7.jpg" alt="Rivière au Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Rivière paisible</h3>
+                    <p class="text_desc">Le calme des eaux, les couleurs de la nature et l’ambiance des villages
+                        riverains.</p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/8.jpg" alt="Paysage culturel du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Culture vivante</h3>
+                    <p class="text_desc">Des traditions ancestrales, des couleurs fortes et un héritage profondément
+                        vivant.</p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/9.jpg" alt="Village camerounais" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Village traditionnel</h3>
+                    <p class="text_desc">Des maisons colorées, des marchés animés et une chaleur humaine incomparable.
+                    </p>
+                </div>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="Asset/images/10.jpg" alt="Panorama du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Panorama du pays</h3>
+                    <p class="text_desc">Un voyage visuel à travers les plus beaux paysages et les plus belles
+                        rencontres.</p>
+                </div>
+            </div>
+
+            <!-- Voici le template de la gallerie a duppliquer -->
+            <!-- <template>
+                <div class="image">
+                    <img loading="lazy" src="" alt="Paysage" class="img">
+                    <div class="description">
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, velit!</p>
+                    </div>
+                </div>
+            </template> -->
+        </div>
+    </section>
+
+    <section class="best-trip" id="pricing">
+        <h1 class="title">Explorez les merveilles du Cameroun</h1>
+        <p class="small-desc">Partez à la découverte des plus belles destinations du pays, entre nature sauvage, villes
+            vibrantes et trésors cachés. Chaque image est une invitation au voyage !</p>
+
+        <div class="box-list" id="carousel_box-list">
+
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/11.jpg" alt="Site historique au Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Monument de Bastos</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>3.8</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                35 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/12.jpg" alt="Paysage de savane au Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Savane de Maroua</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.7</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                45 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/13.jpg" alt="Plantation au Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Cacaoyère de l’Est</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.5</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                25 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/14.jpg" alt="Montagne du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Montagnes du Cameroun</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.7</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                48 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/15.jpg" alt="Vallée verte du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Vallée verte</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.6</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                42 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/16.jpg" alt="Forêt tropicale du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Forêt tropicale</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.9</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                60 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/17.jpg" alt="Côte paisible du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Côte paisible</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.5</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                38 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/18.jpg" alt="Panorama du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Parc national de la Bénoué</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.8</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                55 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/19.jpg" alt="Cascade du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Cascade enchantée</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.9</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                58 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/20.jpg" alt="Rivière du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Rivière paisible</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.4</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                36 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/ville.jpg" alt="Village traditionnel du Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Culture vivante</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.7</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                44 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img loading="lazy" src="Asset/images/Carte.jpg" alt="Village de campagne au Cameroun" class="img">
+                <div class="description">
+                    <h3 class="title_desc">Village traditionnel</h3>
+                    <p class="rating text_desc">♥<i class="fa-solid fa-star"></i>4.8</p>
+                    <div class="button-description">
+                        <span>
+                            Pour
+                            <strong>
+                                52 000 FCFA
+                            </strong>
+                        </span>
+                        <button>Réservez maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <template>
+                <div class="box image">
+                    <img loading="lazy" src="Asset/images/20.jpg" alt="site_a_visiter" class="img">
+                    <div class="description">
+                        <h2>Lorem, ipsum.</h2>
+                        <p class="rating">♥<i class="fa-solid fa-star"></i>4.5</p>
+                        <div class="button-description">
+                            <span>
+                                Pour
+                                <strong>
+                                    X 000 FCFA
+                                </strong>
+                            </span>
+                            <button>Réservez maintenant</button>
+                        </div>
+                    </div>
+                </div>
+            </template> -->
+
+        </div>
+
+        <div class="view-all">
+            <button class="btn">Tout voir</button>
+        </div>
+    </section>
+    <section class="email-trip" id="reviews">
+        <h1 class="title">Ne manquez aucune aventure !</h1>
+
+        <div class="together">
+            <div class="text">
+                <label for="email" class="email-desc">Abonnez-vous pour recevoir nos dernières actualités, des remises exclusives sur
+                    vos réservations et nos conseils d'experts pour votre prochain séjour.
+                </label>
+            </div>
+            <div class="input">
+                <input type="email" placeholder="Votre adresse e-mail..." name="email" id="email">
+                <button class="btn">S'abonner</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="details">
+        <div class="images">
+            <img id="image-detail" src="" />
+        </div>
+        <div id="caracteristiques">
+            <h3 id="detail-title"></h3>
+            <hr>
+            <p id="text-desc"></p>
+        </div>
+
+        <span id="close-image">&times;</span>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <p>Nova<span>Techn.</span></p>
+        </div>
+        <p class="right-footer">Tout droits réservés <span>&copy;2026</span></p>
+    </footer>
+</body>
+
+</html>
